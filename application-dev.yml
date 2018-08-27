@@ -13,13 +13,13 @@ spring:
     proxy-target-class: true
     auto: true
   rabbitmq:
-    host: paascloud-mq-rabbit
+    host: 132.232.122.128
     port: 5672
-    username: guest
-    password: guest
+    username: user_admin
+    password: passwd_admin
   redis:
-    host: paascloud-db-redis
-    password: paascloud@redis
+    host: 132.232.122.128
+    password:
     port: 6379
     timeout: 0
   datasource:

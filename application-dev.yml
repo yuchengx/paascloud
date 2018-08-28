@@ -15,10 +15,10 @@ spring:
   rabbitmq:
     host: 132.232.122.128
     port: 5672
-    username: user_admin
-    password: passwd_admin
+    username: admin
+    password: admin
   redis:
-    host: 132.232.122.128
+    host: 47.95.224.146
     password:
     port: 6379
     timeout: 0
@@ -136,4 +136,4 @@ paascloud:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
   zk:
-    zkAddressList: paascloud-provider-zk:2181
+    zkAddressList: 47.95.224.146:2181

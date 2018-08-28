@@ -13,7 +13,7 @@ spring:
     proxy-target-class: true
     auto: true
   rabbitmq:
-    host: 132.232.122.128
+    host: 47.95.224.146
     port: 5672
     username: admin
     password: admin

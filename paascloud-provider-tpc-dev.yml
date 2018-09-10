@@ -2,7 +2,7 @@ spring:
   cache:
     cache-names: tpc-cache
   datasource:
-    url: jdbc:mysql://132.232.122.128:3306/paascloud_omc?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/paascloud_tpc?useUnicode=true&characterEncoding=UTF-8&useSSL=false
 
 liquibase:
   change-log: classpath:liquibase/index.xml
@@ -32,13 +32,13 @@ security:
     client:
       clientId: paascloud-client-mdc
       clientSecret: paascloudClientSecret
-      access-token-uri: http://132.232.122.128:7979/uac/oauth/token
-      user-authorization-uri: http://132.232.122.128:7979/uac/oauth/authorize
+      access-token-uri: http://127.0.0.1:7979/uac/oauth/token
+      user-authorization-uri: http://127.0.0.1:7979/uac/oauth/authorize
     resource:
-      user-info-uri: http://132.232.122.128:7979/uac/user
+      user-info-uri: http://127.0.0.1:7979/uac/user
       prefer-token-info: false
       jwt:
-        key-uri: http://132.232.122.128:8000/oauth/token_key
+        key-uri: http://127.0.0.1:8000/oauth/token_key
 
 paascloud:
   enableSqlLogInterceptor: false
